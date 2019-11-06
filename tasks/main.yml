@@ -1,0 +1,10 @@
+---
+# tasks file for curso.mariadb
+- name: Instalar Mariadb
+  yum:
+    name: mariadb-server
+    state: installed
+- name: Automatizar MariaDB Server
+  service:
+    name: mariadb
+    state: started
